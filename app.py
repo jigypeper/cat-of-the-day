@@ -6,7 +6,6 @@ import shutil
 app = Flask(__name__)
 
 @app.route("/cats")
-
 def get_cat():
     urls = 'https://api.thecatapi.com/v1/images/search'
     cat_breeds = str(random.choice(['bengal', 'siamese', 'persian', 'ragdoll']))
